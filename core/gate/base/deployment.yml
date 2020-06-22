@@ -22,7 +22,7 @@ spec:
           httpGet:
             # TODO(ezimanyi): we need some way of making this scheme configurable
             # so the health check passes without SSL enabled.
-            scheme: HTTPS
+            scheme: HTTP
             port: traffic-port
             path: /health
         resources:

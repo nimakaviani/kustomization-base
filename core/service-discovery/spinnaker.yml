@@ -2,6 +2,9 @@ services:
   # Even though clouddriver is deployed in HA mode, other services may not know
   # this and simply look for service.clouddriver. To account for this use case,
   # we'll point the generic 'clouddriver' at clouddriver-rw.
+  keel:
+    baseUrl: http://keel.spinnaker:7002
+    enabled: true
   clouddriver:
     baseUrl: http://clouddriver-rw.spinnaker:7002
     enabled: true
