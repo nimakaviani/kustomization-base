@@ -4,7 +4,7 @@ metadata:
   name: deck
 spec:
   ports:
-  - port: 9000
+  - port: 80
     protocol: TCP
     targetPort: 9000
-  type: ClusterIP
+  type: LoadBalancer

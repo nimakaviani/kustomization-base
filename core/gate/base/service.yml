@@ -4,7 +4,7 @@ metadata:
   name: gate
 spec:
   ports:
-  - port: 8084
+  - port: 80
     protocol: TCP
     targetPort: 8084
-  type: ClusterIP
+  type: LoadBalancer
