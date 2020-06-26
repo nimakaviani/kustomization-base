@@ -31,6 +31,8 @@ spec:
           name: front50-config-volume
         - mountPath: /var/secrets
           name: spinnaker-secrets-volume
+        - mountPath: /home/spinnaker/.aws
+          name: spinnaker-aws-secrets-volume
       terminationGracePeriodSeconds: 720
       volumes:
       - name: front50-config-volume
@@ -39,3 +41,6 @@ spec:
       - name: spinnaker-secrets-volume
         secret:
           secretName: spinnaker-secrets
+      - name: spinnaker-aws-secrets-volume
+        secret:
+          secretName: aws-secrets

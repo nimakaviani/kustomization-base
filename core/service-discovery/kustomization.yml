@@ -35,5 +35,7 @@ secretGenerator:
   name: keel-config
 - files: []
   name: spinnaker-secrets
+- files: []
+  name: aws-secrets
 configMapGenerator:
 - name: deck-env
