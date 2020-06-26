@@ -31,6 +31,8 @@ spec:
           name: clouddriver-config-volume
         - mountPath: /var/secrets
           name: spinnaker-secrets-volume
+        - mountPath: /home/spinnaker/.kube
+          name: spinnaker-secrets-volume
         securityContext:
           allowPrivilegeEscalation: false
       terminationGracePeriodSeconds: 720

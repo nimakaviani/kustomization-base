@@ -39,5 +39,7 @@ secretGenerator:
   name: spinnaker-monitoring-config
 - files: []
   name: spinnaker-monitoring-filters
+- files: []
+  name: aws-secrets
 configMapGenerator:
 - name: deck-env
