@@ -11,13 +11,7 @@ spec:
       - env:
         - name: JAVA_OPTS
           value: -XX:MaxRAMPercentage=50.0
-        - name: SPRING_PROFILES_ACTIVE
-          value: local
-        - name: SPRING_CONFIG_NAME
-          value: keel
-        - name: SPRING_CONFIG_LOCATION
-          value: /opt/spinnaker/config/
-        image: docker.io/nimak/spinnaker-keel:0.5
+        image: docker.io/nimak/spinnaker-keel:latest
         name: keel
         ports:
         - containerPort: 7002
